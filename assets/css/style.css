@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility */
+.flex {
+    display: flex;
+}
+
+.bg_blue {
+    background-color: #122439;
+}
+
+.bg_green {
+    background-color: #eef1ed;
+}
+
+.bg_grey {
+    background-color: #bcbebc;
+}
+
+.bg_black {
+    background-color: #111117;
+}
+
+.bg_shark {
+    background-color: #1d2023;
+}
+/*** Sezione Header ***/
+/* Navbar top */
+.navbar_top {
+    color: #bcbebc;
+    padding: 1rem;
+    align-items: center;
+}
+
+.nav_top_left, .nav_top_right {
+    flex-basis: 50%;
+}
+/* Banner */
+.banner {
+    background-image: url('../img/bg-parallax.png');
+    background-position: center;
+    height: 800px;
+}
+/* Nav transparent */
+.navbar_transparent {
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 40%;
+}
+
+.nav_links {
+    flex-basis: 60%;
+}
+/*** Sezione Main ***/
+/* Services */
+#services {
+    height: 500px;
+}
+
+.grid {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: 33.33%;
+    border: 1px solid black;
+    height: 200px;
+}
+
+/* Company */
+#company {
+    height: 500px;
+    color: white;
+}
+
+.about, .image {
+    flex-basis: 50%;
+    border: 1px solid yellow;
+}
+/* Projects */
+#projects {
+    height: 500px;
+}
+
+/* Results */
+#results {
+    height: 500px;
+    color: white;
+}
+/* Get_in */
+#get_in {
+    height: 500px;
+}
+
+.form, .example {
+    flex-basis: 50%;
+    border: 1px solid red
+}
+/*** Sezione Footer ***/
+footer {
+    height: 500px;
+    color: white;
+}
+
+#links {
+    height: 90%;
+
+}
+
+#credits {
+    height: 10%;
+}
+
+.info, .footer_card {
+    flex-basis: 25%;
+}
+
+.credits_left, .credits_right {
+    flex-basis: 50%;
+}
