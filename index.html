@@ -7,9 +7,10 @@
         <!-- File CSS -->
         <link rel="stylesheet" href="./assets/css/style.css">
         <!-- Google Font -->
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <!-- FontAwesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <!--  AXIOS CDN -->
@@ -30,8 +31,18 @@
 
                 <nav class="navbar_top bg_blue">
                     <div class="container flex">
-                        <div class="nav_top_left">Open hours</div>
-                        <div class="nav_top_right text-right">links</div>
+                        <div class="nav_top_left">
+                            <i class="fas fa-clock"></i>
+                            <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
+                        </div>
+                        <div class="nav_top_right text-right">
+                            <ul class="list-inline">
+                                <li v-for="social in socials">
+                                    <i :class="social.icon"></i>
+                                    {{ social.text }}
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
 

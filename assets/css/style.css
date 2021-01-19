@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Utility */
 .flex {
     display: flex;
@@ -28,6 +32,7 @@
 .bg_shark {
     background-color: #1d2023;
 }
+
 /*** Sezione Header ***/
 /* Navbar top */
 .navbar_top {
@@ -39,6 +44,19 @@
 .nav_top_left, .nav_top_right {
     flex-basis: 50%;
 }
+
+.nav_top_right ul {
+    margin-bottom: 0;
+}
+
+.nav_top_right ul li {
+    padding: 0 1rem;
+}
+
+.nav_top_right ul li i {
+    padding: 0 0.5rem;
+}
+
 /* Banner */
 .banner {
     background-image: url('../img/bg-parallax.png');
