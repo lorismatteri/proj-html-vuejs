@@ -80,6 +80,29 @@ let app = new Vue ({
                 title: 'Regulatory Risk',
                 overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             },
+        ],
+        infos: [
+            //Card in sezione About
+            {
+                icon: 'fas fa-award',
+                title: 'Tradition',
+                overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
+            {
+                icon: 'fas fa-lock',
+                title: 'Tradition',
+                overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
+            {
+                icon: 'far fa-edit',
+                title: 'Tradition',
+                overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
+            {
+                icon: 'fas fa-graduation-cap',
+                title: 'Tradition',
+                overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
         ]
     },
     methods: {

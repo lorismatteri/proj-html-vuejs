@@ -94,7 +94,7 @@
                             <div class="card" v-for="service in services">
                                 <div class="icons flex">
                                     <i :class="service.icon"></i>
-                                    <i class="fas fa-arrow-right"></i>
+                                    <i class="fas fa-arrow-right arrow"></i>
                                 </div>
                                 <h3>{{service.title}}</h3>
                                 <p>{{service.overview}}</p>
@@ -102,17 +102,31 @@
                             
                         </div>
                     </div>
+                    <img src="./assets/img/bullets.png" alt="">
                 </section>
                 <!-- /Services -->
+
+
 
                 <section id="about" class="bg_black">
                     <div class="container flex">
                         <div class="company">
-                            ABOUT
+                            <h4 class="text-uppercase">about the network</h4>
+                            <h2><span>The</span>Company</h2>
+                            <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients.</p>
+                            <div class="grid flex">
+                                <div class="card" v-for="info in infos">
+                                    <i :class="info.icon"></i>
+                                    <h3>{{info.title}}</h3>
+                                    <p>{{info.overview}}</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button><a href="#form" class="text-uppercase">Get in touch</a></button>
+                                <button><a href="#" class="text-uppercase">read more</a></button>
+                            </div>
                         </div>
-                        <div class="image">
-                            GIACCAECRAVATTA
-                        </div>
+                        <div class="image"></div>
                     </div>
                 </section>
                 <!-- /About -->

@@ -125,7 +125,11 @@ body {
 }
 /*** Sezione Main ***/
 /* Services */
-#services h4{
+#services {
+    position: relative;
+}
+
+#services h4, #about h4{
     margin: 1rem;
 }
 
@@ -133,19 +137,27 @@ body {
     margin: 2rem 1rem;
 }
 
-#services h2 span {
-    background-color: aquamarine;
+#services h2 span, #about h2 span {
+    background-color: #6ca0a0;
     padding: 1rem;
     margin: 1rem;
+    border-radius: 5px;
 }
 
 #services div.flex:nth-child(3) {
     margin: 0 1rem;
+    justify-content: space-between;
+    font-size: 1.5rem;
 }
 
-.grid {
+#services p {
+    width: 65%;
+}
+
+#services .grid {
     width: 100%;
     flex-wrap: wrap;
+    margin-bottom: 10rem;
 }
 
 .card {
@@ -153,22 +165,79 @@ body {
     background-color: white;
     border-radius: 1rem;
     margin: 1rem;
+    padding: 3rem;
 }
 
 .card .icons {
     justify-content: space-between;
 }
 
+.icons i:nth-child(1) {
+    font-size: 3.5rem;
+}
+
+.arrow {
+    background-color: #038484;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+#services img {
+    width: 10%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem;
+}
 /* about */
 #about {
-    height: 500px;
     color: white;
 }
 
 .company, .image {
     flex-basis: 50%;
-    border: 1px solid yellow;
 }
+
+.company {
+    margin-top: 8rem;
+    padding-left: 10rem;
+}
+
+#about p {
+    margin: 1rem;
+}
+
+#about .grid {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#about .card {
+    flex-basis: calc(50% - 2rem);
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
+#about .card h3 {
+    display: inline-block;
+}
+
+#about .card p {
+    margin: 0;
+}
+
+#about .buttons {
+    padding: 1rem;
+    margin-bottom: 8rem;
+}
+
+.image {
+    background-image: url('../img/about-4.jpg');
+    background-size: cover;
+}
+
 /* Projects */
 #projects {
     height: 500px;
