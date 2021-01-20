@@ -54,12 +54,9 @@
                         </div>
                         <div class="nav_links">
                             <ul class="list-inline">
-                                <li>LINK</li>
-                                <li>LINK</li>
-                                <li>LINK</li>
-                                <li>LINK</li>
-                                <li>LINK</li>
-                                <button>Get In Touch</button>
+                                <li v-for="navLink in navLinks"><a :href="navLink.href">{{ navLink.text}}</a></li>
+                                
+                                <button><a href="#form" class="text-uppercase">Get in touch</a></button>
                             </ul>
                         </div>
 
@@ -87,9 +84,9 @@
                 </section>
                 <!-- /Services -->
 
-                <section id="company" class="bg_black">
+                <section id="about" class="bg_black">
                     <div class="container flex">
-                        <div class="about">
+                        <div class="company">
                             ABOUT
                         </div>
                         <div class="image">
@@ -97,7 +94,7 @@
                         </div>
                     </div>
                 </section>
-                <!-- /Company -->
+                <!-- /About -->
 
                 <section id="projects">
                     <div class="container text-center">
@@ -143,7 +140,7 @@
 
                 <section id="get_in">
                     <div class="container flex">
-                        <div class="form">form</div>
+                        <div id="form">form</div>
                         <div class="example">example</div>
                     </div>
                 </section>

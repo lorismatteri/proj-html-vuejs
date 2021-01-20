@@ -92,13 +92,13 @@ body {
     height: 200px;
 }
 
-/* Company */
-#company {
+/* about */
+#about {
     height: 500px;
     color: white;
 }
 
-.about, .image {
+.company, .image {
     flex-basis: 50%;
     border: 1px solid yellow;
 }
@@ -117,7 +117,7 @@ body {
     height: 500px;
 }
 
-.form, .example {
+#form, .example {
     flex-basis: 50%;
     border: 1px solid red
 }
