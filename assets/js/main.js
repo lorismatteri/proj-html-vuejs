@@ -103,10 +103,76 @@ let app = new Vue ({
                 title: 'Tradition',
                 overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             },
+        ],
+        tags: [
+            //Lista per nav in section Projects
+            {
+                name: 'ALL'
+            },
+            {
+                name: 'INSTITUTIONAL'
+            },
+            {
+                name: 'SOCIAL'
+            },
+            {
+                name: 'EVENTS'
+            },
+            {
+                name: 'INNOVATION'
+            },
+            {
+                name: 'EVIRONMENT'
+            },
+            {
+                name: 'TECHNOLOGY'
+            }
+        ],
+        projects: [
+            {
+                image: './assets/img/project-1.jpg',
+                title: 'Academic professional program in social media'
+            },
+            {
+                image: './assets/img/project-2.jpg',
+                title: "President's speech at the annual meeting"
+            },
+            {
+                image: './assets/img/project-3.jpg',
+                title: 'International business trip in Shanghai'
+            },
+            {
+                image: './assets/img/project-4.jpg',
+                title: 'Technology workshop with education theme'
+            },
+            {
+                image: './assets/img/project-5.jpg',
+                title: 'Donation of clothes and food to the partner NGO'
+            },
+            {
+                image: './assets/img/project-6.jpg',
+                title: 'Confraternization of the procurement team'
+            },
         ]
     },
     methods: {
 
+    },
+    mounted(){
+        let over = $('.overlay');
+        console.log(over);
+        $(over).hover(function () {
+                // over
+                $('.overlay h3').css('bottom', '30%');
+                $('.overlay i').css('display', 'block');
+                $('.overlay p').css('display', 'block')
+            }, function () {
+                // out
+                $('.overlay h3').css('bottom', '15%');
+                $('.overlay i').css('display', 'none');
+                $('.overlay p').css('display', 'none')
+            }
+        );
     }
 })
 

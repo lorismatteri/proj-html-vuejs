@@ -9,6 +9,11 @@ body {
 }
 
 /* Utility */
+.container_my {
+    width: 70%;
+    margin: auto;
+}
+
 .flex {
     display: flex;
 }
@@ -137,7 +142,7 @@ body {
     margin: 2rem 1rem;
 }
 
-#services h2 span, #about h2 span {
+#services h2 span, #about h2 span, #projects h2 span {
     background-color: #6ca0a0;
     padding: 1rem;
     margin: 1rem;
@@ -154,10 +159,10 @@ body {
     width: 65%;
 }
 
-#services .grid {
+#services .grid, #projects .grid {
     width: 100%;
     flex-wrap: wrap;
-    margin-bottom: 10rem;
+    padding-bottom: 10rem;
 }
 
 .card {
@@ -182,26 +187,36 @@ body {
     border-radius: 50%;
 }
 
-#services img {
+#services img, #about img {
     width: 10%;
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 3rem;
+    z-index: 999;
 }
 /* about */
 #about {
+    position: relative;
     color: white;
+    width: 100%;
 }
 
-.company, .image {
-    flex-basis: 50%;
+#about .container_my {
+    position: absolute;
+    top: 0;
+    left: 15%;
 }
 
 .company {
-    margin-top: 8rem;
-    padding-left: 10rem;
+    flex-basis: 50%;
+    margin-top: 10rem;
+}
+
+#about h2 {
+    font-weight: 800;
+    font-size: 4rem;
 }
 
 #about p {
@@ -230,17 +245,71 @@ body {
 
 #about .buttons {
     padding: 1rem;
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 }
 
 .image {
+    height: 700px;
+    width: 50%;
     background-image: url('../img/about-4.jpg');
     background-size: cover;
+    margin-left: 50%;
+    z-index: 998;
 }
 
 /* Projects */
 #projects {
-    height: 500px;
+    padding-top: 5rem;
+}
+
+#projects .card {
+    position: relative;
+    padding: 0;
+}
+
+#projects img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+}
+
+.overlay i {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: transparent;
+    color: white;
+    font-size: 3rem;
+    display: none;
+}
+
+.overlay h3 {
+    position: absolute;
+    bottom: 15%;
+    padding: 2rem 3rem;
+    color: white;
+    font-weight: 600;
+}
+
+.overlay p {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    color: white;
+    font-weight: 600;
+    display: none;
 }
 
 /* Results */

@@ -30,7 +30,7 @@
             <header>
 
                 <nav class="navbar_top bg_blue">
-                    <div class="container flex">
+                    <div class="container_my flex">
                         <div class="nav_top_left">
                             <i class="fas fa-clock"></i>
                             <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
@@ -48,7 +48,7 @@
 
                 <div class="banner">
 
-                    <nav class="navbar_transparent container flex">
+                    <nav class="navbar_transparent container_my flex">
                         <div class="logo">
                             <img :src="logo" alt="">
                         </div>
@@ -83,7 +83,7 @@
             <main>
                 
                 <section id="services" class="bg_green">
-                    <div class="container">
+                    <div class="container_my">
                         <h4 class="text-uppercase">our business areas</h4>
                         <h2>Excellence in<span>Services</span></h2>
                         <div class="flex">
@@ -109,7 +109,8 @@
 
 
                 <section id="about" class="bg_black">
-                    <div class="container flex">
+                    <div class="image"></div>
+                    <div class="container_my flex">
                         <div class="company">
                             <h4 class="text-uppercase">about the network</h4>
                             <h2><span>The</span>Company</h2>
@@ -126,38 +127,35 @@
                                 <button><a href="#" class="text-uppercase">read more</a></button>
                             </div>
                         </div>
-                        <div class="image"></div>
                     </div>
+                    <img src="./assets/img/bullets.png" alt="">
                 </section>
                 <!-- /About -->
 
                 <section id="projects">
-                    <div class="container text-center">
+                    <div class="container_my text-center">
 
-                        <h2>Actions & Projects</h2>
-                        <ul class="list-inline">
-                            <li>LINK</li>
-                            <li>LINK</li>
-                            <li>LINK</li>
-                            <li>LINK</li>
-                            <li>LINK</li>
-                            <li>LINK</li>
-                            <li>LINK</li>
+                        <h4 class="text-uppercase">we do more for everyone</h4>
+                        <h2>Actions &<span>Projects</span></h2>
+                        <ul class="list-inline" >
+                            <li v-for="tag in tags">{{tag.name}}</li>
                         </ul>
                         <div class="grid flex">
-                            <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
+                            <div class="card" v-for="project in projects">
+                                <div class="overlay">
+                                    <i class="fas fa-arrow-right arrow"></i>
+                                    <h3>{{project.title}}</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <img :src="project.image" alt="">
+                            </div>
                         </div>
                     </div>
                 </section>
                 <!-- /Projects -->
 
                 <section id="results" class="bg_shark">
-                    <div class="container">
+                    <div class="container_my">
                         <div class="numbers">results in number</div>
                         <div class="logos">
                             <ul class="list-inline">
@@ -174,7 +172,7 @@
                 <!-- /Results -->
 
                 <section id="get_in">
-                    <div class="container flex">
+                    <div class="container_my flex">
                         <div id="form">form</div>
                         <div class="example">example</div>
                     </div>
@@ -187,7 +185,7 @@
             <footer>
 
                 <section id="links" class="bg_shark">
-                    <div class="container flex">
+                    <div class="container_my flex">
                         <div class="info">Infos</div>
                         <div class="footer_card">Links list</div>
                         <div class="footer_card">Links list</div>
@@ -197,7 +195,7 @@
                 <!-- /Footer_top -->
 
                 <section id="credits" class="bg_black">
-                    <div class="container flex">
+                    <div class="container_my flex">
                         <div class="credits_left">enjoy</div>
                         <div class="credits_right">2020</div>
                     </div>
