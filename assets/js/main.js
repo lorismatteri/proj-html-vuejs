@@ -47,6 +47,39 @@ let app = new Vue ({
                 text: 'RESULTS',
                 href: '#results'
             }
+        ],
+        services: [
+            //Card Sezione Services
+            {
+                icon: 'fas fa-network-wired',
+                title: 'Audit & Assurance',
+                overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
+            {
+                icon: 'fas fa-briefcase',
+                title: 'Financial Advisory',
+                overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
+            {
+                icon: 'far fa-chart-bar',
+                title: 'Analytics and M&A',
+                overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
+            {
+                icon: 'fas fa-plane',
+                title: 'Middle Marketing',
+                overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
+            {
+                icon: 'fas fa-globe-europe',
+                title: 'Legal Consulting',
+                overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
+            {
+                icon: 'fas fa-archive',
+                title: 'Regulatory Risk',
+                overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
         ]
     },
     methods: {

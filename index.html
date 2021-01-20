@@ -69,7 +69,7 @@
                         <button><a href="#form" class="text-uppercase">Get in touch</a></button>
                         <button><a href="#" class="text-uppercase">Read More</a></button>
                     </div>
-                    
+
                     <div class="ellips_box flex">
                         <div class="ellips" v-for="number in 3"></div>
                     </div>
@@ -84,14 +84,22 @@
                 
                 <section id="services" class="bg_green">
                     <div class="container">
-                        <h2>Excellence</h2>
+                        <h4 class="text-uppercase">our business areas</h4>
+                        <h2>Excellence in<span>Services</span></h2>
+                        <div class="flex">
+                            <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
+                            <button><a href="#" class="text-uppercase">See all</a></button>
+                        </div>
                         <div class="grid flex">
-                            <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
+                            <div class="card" v-for="service in services">
+                                <div class="icons flex">
+                                    <i :class="service.icon"></i>
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <h3>{{service.title}}</h3>
+                                <p>{{service.overview}}</p>
+                            </div>
+                            
                         </div>
                     </div>
                 </section>

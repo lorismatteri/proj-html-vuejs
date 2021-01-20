@@ -125,8 +125,22 @@ body {
 }
 /*** Sezione Main ***/
 /* Services */
-#services {
-    height: 500px;
+#services h4{
+    margin: 1rem;
+}
+
+#services h2 {
+    margin: 2rem 1rem;
+}
+
+#services h2 span {
+    background-color: aquamarine;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#services div.flex:nth-child(3) {
+    margin: 0 1rem;
 }
 
 .grid {
@@ -135,9 +149,14 @@ body {
 }
 
 .card {
-    flex-basis: 33.33%;
-    border: 1px solid black;
-    height: 200px;
+    flex-basis: calc(33.33% - 2rem);;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.card .icons {
+    justify-content: space-between;
 }
 
 /* about */
