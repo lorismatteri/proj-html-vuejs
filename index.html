@@ -97,12 +97,20 @@
                             <div class="card" v-for="service in services">
                                 <div class="icons flex">
                                     <i :class="service.icon"></i>
-                                    <i class="fas fa-arrow-right arrow"></i>
+                                    <!-- <i class="fas fa-arrow-right arrow"></i> -->
                                 </div>
                                 <h3>{{service.title}}</h3>
                                 <p>{{service.overview}}</p>
-                            </div>
-                            
+                                
+                                <div class="card no_visible">
+                                    <div class="icons flex">
+                                        <i :class="service.icon"></i>
+                                        <i class="fas fa-arrow-right arrow"></i>
+                                    </div>
+                                    <h3>{{service.title}}</h3>
+                                    <p>{{service.overview}}</p>
+                                </div>
+                            </div>                         
                         </div>
                     </div>
                     <img src="./assets/img/bullets.png" alt="">
