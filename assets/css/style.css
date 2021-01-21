@@ -142,7 +142,7 @@ body {
     margin: 2rem 1rem;
 }
 
-#services h2 span, #about h2 span, #projects h2 span {
+#services h2 span, #about h2 span, #projects h2 span, #results h2 span {
     background-color: #6ca0a0;
     padding: 1rem;
     margin: 1rem;
@@ -314,9 +314,30 @@ body {
 
 /* Results */
 #results {
-    height: 500px;
     color: white;
 }
+
+.results_top {
+    background-image: url('../img/bg-7.jpg');
+    background-position: left center;
+    padding: 7rem 0;
+}
+
+.box {
+    flex-basis: 25%;
+    padding: 2.5rem;
+}
+
+.results_bottom {
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.logo_box {
+    flex-basis: calc(100% / 6);
+}
+
 /* Get_in */
 #get_in {
     height: 500px;

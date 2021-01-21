@@ -154,18 +154,28 @@
                 </section>
                 <!-- /Projects -->
 
-                <section id="results" class="bg_shark">
-                    <div class="container_my">
-                        <div class="numbers">results in number</div>
-                        <div class="logos">
-                            <ul class="list-inline">
-                                <li>Logo</li>
-                                <li>Logo</li>
-                                <li>Logo</li>
-                                <li>Logo</li>
-                                <li>Logo</li>
-                                <li>Logo</li>
-                            </ul>
+                <section id="results" class="">
+                    <div class="results_top">
+                        <div class="container_my text-center">
+                            <h4 class="text-uppercase">what are we doing</h4>
+                            <h2><span>Results</span>in Numbers</h2>
+                        </div>
+                        <div class="container_my flex">
+                            <div class="box text-center" v-for="result in results">
+                                <h3>{{result.number}}</h3>
+                                <p>{{result.text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results_bottom flex bg_shark">
+
+                        <div class="container_my flex">
+                            
+                            <div class="logo_box text-center" v-for="logo in logos">
+                                <img :src="logo.img" alt="">
+
+                            </div>                            
+                            
                         </div>
                     </div>
                 </section>

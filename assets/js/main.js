@@ -153,6 +153,46 @@ let app = new Vue ({
                 image: './assets/img/project-6.jpg',
                 title: 'Confraternization of the procurement team'
             },
+        ],
+        results: [
+            //Card in section results
+            {
+                number: '128',
+                text: 'Certifications'
+            },
+            {
+                number: '230',
+                text: 'Employees'
+            },
+            {
+                number: '517',
+                text: 'Customers'
+            },
+            {
+                number: '94',
+                text: 'Countries Served'
+            },
+        ],
+        logos: [
+            //Lista loghi in section results
+            {
+                img: './assets/img/logo-4.png'
+            },
+            {
+                img: './assets/img/logo-5.png'
+            },
+            {
+                img: './assets/img/logo-1.png'
+            },
+            {
+                img: './assets/img/logo-2.png'
+            },
+            {
+                img: './assets/img/logo-3.png'
+            },
+            {
+                img: './assets/img/logo-4.png'
+            },
         ]
     },
     methods: {
