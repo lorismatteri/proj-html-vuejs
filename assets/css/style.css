@@ -38,6 +38,10 @@ body {
     background-color: #1d2023;
 }
 
+.list_none {
+    list-style: none;
+}
+
 /*** Sezione Header ***/
 /* Navbar top */
 .navbar_top {
@@ -132,6 +136,7 @@ body {
 /* Services */
 #services {
     position: relative;
+    padding-top: 5rem;
 }
 
 #services h4, #about h4{
@@ -349,23 +354,48 @@ body {
 }
 /*** Sezione Footer ***/
 footer {
-    height: 500px;
-    color: white;
+    color: #bcbebc;
 }
 
 #links {
-    height: 90%;
-
+    padding: 5rem 0;
 }
+
+.info_card, .footer_card {
+    flex-basis: 25%;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.info_card img {
+    width: 50%;
+}
+
+.info_card p {
+    margin: 2rem 0;
+}
+
+.info_card i {
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+} 
 
 #credits {
-    height: 10%;
+    padding: 2rem 0;
 }
 
-.info, .footer_card {
-    flex-basis: 25%;
+#credits p {
+    margin: 0;
+}
+
+#credits > div.flex {
+    align-items: center;
 }
 
 .credits_left, .credits_right {
     flex-basis: 50%;
+}
+
+.credits_right span {
+    color: #038484;
 }

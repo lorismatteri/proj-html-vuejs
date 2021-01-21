@@ -193,6 +193,20 @@ let app = new Vue ({
             {
                 img: './assets/img/logo-4.png'
             },
+        ],
+        contacts: [
+            {
+                icon: 'fas fa-phone-alt',
+                text: '+1 (305) 1234-5678'
+            },
+            {
+                icon: 'fas fa-envelope',
+                text: 'hello@example.com',
+            },
+            {
+                icon: 'fas fa-map-marker-alt',
+                text: 'Main Avenue, 987',
+            },
         ]
     },
     methods: {

@@ -167,7 +167,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="results_bottom flex bg_shark">
+                    <div class="results_bottom flex bg_black">
 
                         <div class="container_my flex">
                             
@@ -196,7 +196,14 @@
 
                 <section id="links" class="bg_shark">
                     <div class="container_my flex">
-                        <div class="info">Infos</div>
+                        <div class="info_card">
+                            <img :src="logo" alt="">
+                            <p class="text-capitalize">a functional HTML template for corporate & business.</p>
+                            <ul class="list_none">
+                                <li v-for="contact in contacts"><i :class="contact.icon"></i>{{contact.text}}</li>
+                            </ul>
+                            <button><a href="#form" class="text-uppercase">Get in touch</a></button>
+                        </div>
                         <div class="footer_card">Links list</div>
                         <div class="footer_card">Links list</div>
                         <div class="footer_card">Links list</div>   
@@ -206,8 +213,12 @@
 
                 <section id="credits" class="bg_black">
                     <div class="container_my flex">
-                        <div class="credits_left">enjoy</div>
-                        <div class="credits_right">2020</div>
+                        <div class="credits_left">
+                            <p>Enjoy the low price. We are tracking any intention of piracy.</p>
+                        </div>
+                        <div class="credits_right text-right">
+                            <p> &copy; NEXGEN is Proudly Powered by <span>Codings</span></p>
+                        </div>
                     </div>
                 </section>
                 <!-- /Footer_bottom -->
