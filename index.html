@@ -55,11 +55,11 @@
                         <div class="logo">
                             <img :src="logo" alt="">
                         </div>
-                        <div class="nav_links">
+                        <div class="nav_links flex">
                             <ul class="list-inline">
                                 <li v-for="navLink in navLinks"><a :href="navLink.href">{{ navLink.text}}</a></li>
                                 
-                                <button><a href="#form" class="text-uppercase">Get in touch</a></button>
+                                <button class="btn_full"><a href="#form" class="text-uppercase">Get in touch</a></button>
                             </ul>
                         </div>
 
@@ -69,8 +69,8 @@
                     <div class="ready text-center">
                         <h1>Ready<span>Team</span></h1>
                         <p>No matter what your company needs, we will be ready to assist you in the best possible way</p>
-                        <button><a href="#form" class="text-uppercase">Get in touch</a></button>
-                        <button><a href="#" class="text-uppercase">Read More</a></button>
+                        <button class="btn_full"><a href="#form" class="text-uppercase">Get in touch</a></button>
+                        <button class="btn_empty"><a href="#" class="text-uppercase">Read More</a></button>
                     </div>
 
                     <div class="ellips_box flex">
@@ -91,7 +91,7 @@
                         <h2>Excellence in<span>Services</span></h2>
                         <div class="flex">
                             <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
-                            <button><a href="#" class="text-uppercase">See all</a></button>
+                            <button class="btn_full"><a href="#" class="text-uppercase">See all</a></button>
                         </div>
                         <div class="grid flex">
                             <div class="card" v-for="service in services">
@@ -134,8 +134,8 @@
                                 </div>
                             </div>
                             <div class="buttons">
-                                <button><a href="#form" class="text-uppercase">Get in touch</a></button>
-                                <button><a href="#" class="text-uppercase">read more</a></button>
+                                <button class="btn_full"><a href="#form" class="text-uppercase">Get in touch</a></button>
+                                <button class="btn_empty"><a href="#" class="text-uppercase">read more</a></button>
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@
                                     <option value="">More info</option>
                                 </select>
                                 <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
-                                <button type="submit">SEND</button>
+                                <button class="btn_full" type="submit">SEND</button>
                             </form>
                         </div>
                         <div class="example">
@@ -216,7 +216,7 @@
                             <ul class="list_none">
                                 <li v-for="contact in contacts"><i :class="contact.icon"></i>{{contact.text}}</li>
                             </ul>
-                            <button class="text-uppercase">View Map</button>
+                            <button class="text-uppercase btn_empty">View Map</button>
                         </div>
                     </div>
                 </section>

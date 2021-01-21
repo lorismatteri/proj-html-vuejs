@@ -65,6 +65,7 @@ p, li, a {
 
 .nav_top_right ul li {
     padding: 0 1rem;
+    font-size: 1.4rem;
 }
 
 .nav_top_right ul li i {
@@ -77,6 +78,7 @@ p, li, a {
     background-position: center;
     height: 800px;
     position: relative;
+    color: #122439;
 }
 
 .ready {
@@ -93,9 +95,11 @@ p, li, a {
 }
 
 .ready h1 span {
-    background-color: aquamarine;
+    background-color: #6ca0a069;
     padding: 1rem;
     margin: 1rem;
+    color: #038484;
+    border-radius: 5px;
 }
 
 .ready p {
@@ -103,6 +107,30 @@ p, li, a {
     margin: auto;
     padding: 2rem 0;
     font-size: 1.75rem;
+}
+
+.btn_empty {
+    background-color: transparent;
+    margin: 1rem;
+    color: #038484;
+    padding: 1rem 1.5rem;
+    border: 2px solid #038484;
+    border-radius: 5px;
+}
+
+.btn_empty:hover {
+    background-color: #038484;
+    color: white;
+}
+
+.btn_empty a {
+    color: #038484;
+    font-weight: 500;
+}
+
+.btn_empty a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 .ellips_box {
@@ -128,15 +156,58 @@ p, li, a {
 /* Nav transparent */
 .navbar_transparent {
     align-items: center;
+    padding: 1rem;
 }
 
 .logo {
     flex-basis: 40%;
 }
 
+.logo img {
+    width: 35%;
+}
+
 .nav_links {
     flex-basis: 60%;
+    align-items: center;
 }
+
+.nav_links ul {
+    margin: 0;
+}
+
+.nav_links ul li {
+    padding: 0 1.5rem;
+}
+
+.nav_links a {
+    color: #122439;
+    font-weight: 500;
+}
+
+.nav_links a:hover {
+    text-decoration: none;;
+}
+
+.btn_full {
+    margin: 1rem;
+    background-color: #038484;
+    padding: 1rem 1.5rem;
+    border: 2px solid #038484;
+    border-radius: 5px
+}
+
+.btn_full a {
+    color: white;
+    font-weight: 500;
+}
+
+.btn_full a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
 /*** Sezione Main ***/
 /* Services */
 #services {
@@ -146,10 +217,13 @@ p, li, a {
 
 #services h4, #about h4, #get_in h4 {
     margin: 1rem;
+    color: #038484;
+    font-weight: 600;
 }
 
-#services h2, #get_in h2 {
+#services h2, #get_in h2, #results h2, #projects h2  {
     margin: 2rem 1rem;
+    font-weight: 800;
 }
 
 #services h2 span, #about h2 span, #projects h2 span, #results h2 span, #get_in h2 span {
@@ -291,6 +365,11 @@ p, li, a {
     padding-top: 5rem;
 }
 
+#projects h4{
+    color: #038484;
+    font-weight: 600;
+}
+
 #projects .card {
     position: relative;
     padding: 0;
@@ -414,7 +493,8 @@ p, li, a {
 
 #form button {
     margin: 1rem;
-    padding: 0.5rem 1rem;
+    color: white;
+
 }
 
 .example h3 {
