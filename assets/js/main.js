@@ -285,10 +285,9 @@ let app = new Vue ({
     },
     methods: {
         inviaMess: function() {
-            const div = $('#message');
-            console.log(div);
-            $(div).css('opacity', '1');
+            alert('Grazie per il tuo messaggio 😄')
         }
+         
     },
     mounted(){
         let over = $('.overlay');
