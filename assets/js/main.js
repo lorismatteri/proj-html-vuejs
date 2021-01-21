@@ -207,6 +207,80 @@ let app = new Vue ({
                 icon: 'fas fa-map-marker-alt',
                 text: 'Main Avenue, 987',
             },
+        ],
+        links: [
+            //Card con vari link nel footer
+            {
+                title: 'About',
+                items: [
+                    {
+                        text:'The Company'
+                    },
+                    {
+                        text:'Institutional'
+                    },
+                    {
+                        text:'Social & Events'
+                    },
+                    {
+                        text:'Innovation'
+                    },
+                    {
+                        text: 'Environment'
+                    },
+                    {
+                        text:'Technology'
+                    }
+                ]
+            },
+            {
+                title: 'Services',
+                items: [
+                    {
+                        text:'Audit & Assurance'
+                    },
+                    {
+                        text:'Financial Advisory'
+                    },
+                    {
+                        text:'Analytics M&A'
+                    },
+                    {
+                        text:'Middle Marketing'
+                    },
+                    {
+                        text:'Legal Consulting'
+                    },
+                    {
+                        text:'Regulatory Risk'
+
+                    }
+                ]
+            },
+            {
+                title: 'Support',
+                items: [
+                    {
+                        text:'Responsibility'
+                    },
+                    {
+                        text:'Terms of Use'
+                    },
+                    {
+                        text:'About Cookies'
+                    },
+                    {
+                        text:'Privacy Policy'
+                    },
+                    {
+                        text:'Accessibility'
+                    },
+                    {
+                        text:'Information'
+                    }
+                ]
+            },
+
         ]
     },
     methods: {
