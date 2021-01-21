@@ -430,6 +430,7 @@ p, li, a {
 /*** Sezione Footer ***/
 footer {
     color: #bcbebc;
+    position: relative;
 }
 
 #links {
@@ -493,4 +494,28 @@ footer {
 
 .credits_right span {
     color: #038484;
+}
+
+#goup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    text-align: center;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    background-color: #1d2023;
+    border-radius: 50%;
+}
+
+#goup a {
+    color: #111117;
+}
+
+#goup i {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
