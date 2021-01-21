@@ -6,7 +6,10 @@
         <title>Document</title>
         <!-- File CSS -->
         <link rel="stylesheet" href="./assets/css/style.css">
-        <!-- Google Font -->
+        <!-- Google Font Poppins -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+        <!-- Google Font Montserrat-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <!-- FontAwesome -->
@@ -183,8 +186,27 @@
 
                 <section id="get_in">
                     <div class="container_my flex">
-                        <div id="form">form</div>
-                        <div class="example">example</div>
+                        <div id="form">
+                            <h4 class="text-uppercase">send a message</h4>
+                            <h2>Get in<span>Touch</span></h2>
+                            <p>We will respond to your message as soon as possible</p>
+                            <form>
+                                <input type="text" id="name" placeholder="Name">
+                                <input type="email" name="" id="" placeholder="Email">
+                                <input type="text" name="" id="" placeholder="Number">
+                                <select name="" id="">
+                                    <option value="">More info</option>
+                                </select>
+                                <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                                <button @click="inviaMess">Send</button>
+                            </form>
+                            <div id="message" class="flex">
+                                <h2>Grazie per il tuo messaggio 😻 </h2>
+                            </div>
+                        </div>
+                        <div class="example">
+                            example
+                        </div>
                     </div>
                 </section>
                 <!-- /Get_in -->

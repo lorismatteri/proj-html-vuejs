@@ -284,7 +284,11 @@ let app = new Vue ({
         ]
     },
     methods: {
-
+        inviaMess: function() {
+            const div = $('#message');
+            console.log(div);
+            $(div).css('opacity', '1');
+        }
     },
     mounted(){
         let over = $('.overlay');
